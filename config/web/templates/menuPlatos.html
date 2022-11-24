@@ -21,7 +21,7 @@
             <div class="container">
                 <div class="row row-cols-1 row-cols-md-3 g-3">
                     {% for plato in platos %}
-                        <div class="col">
+                        <div class="col col-md-3">
                             <div class="card h-100 shadow">
                                 <img src={{plato.foto}} alt="img-fluid w-100">
                                 <h4>
@@ -46,6 +46,11 @@
                     {% endfor %}
                 </div>
             </div>
+            <footer>
+                <header>
+                    {%  include './shared/footer.html' %}
+                </header>
+            </footer>
         </main>
 
         <!-- JavaScript Bundle with Popper -->
